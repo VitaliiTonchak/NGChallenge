@@ -12,4 +12,8 @@ class NGAPITests: XCTestCase {
     func testAdd() {
         XCTAssertEqual(ngLib.add(a: 1, b: 1), 2)
     }
+    
+    func testSub() {
+        XCTAssertEqual(ngLib.sub(a: 3, b: 1), 2)
+    }
 }
