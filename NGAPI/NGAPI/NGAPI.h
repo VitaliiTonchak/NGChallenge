@@ -1,10 +1,3 @@
-//
-//  NGAPI.h
-//  NGAPI
-//
-//  Created by vtonchak on 22/5/23.
-//
-
 #import <Foundation/Foundation.h>
 
 //! Project version number for NGAPI.

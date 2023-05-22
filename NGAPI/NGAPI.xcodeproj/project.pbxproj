@@ -11,6 +11,8 @@
 		B76F33352A1B7C61000CA399 /* NGAPI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76F332A2A1B7C60000CA399 /* NGAPI.framework */; };
 		B76F333A2A1B7C61000CA399 /* NGAPITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76F33392A1B7C61000CA399 /* NGAPITests.swift */; };
 		B76F333B2A1B7C61000CA399 /* NGAPI.h in Headers */ = {isa = PBXBuildFile; fileRef = B76F332D2A1B7C60000CA399 /* NGAPI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B76F334A2A1B8A80000CA399 /* NGLib.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76F33492A1B8A80000CA399 /* NGLib.swift */; };
+		B76F334C2A1B8AEA000CA399 /* NGLibProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76F334B2A1B8AEA000CA399 /* NGLibProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		B76F332E2A1B7C60000CA399 /* NGAPI.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = NGAPI.docc; sourceTree = "<group>"; };
 		B76F33342A1B7C61000CA399 /* NGAPITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NGAPITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76F33392A1B7C61000CA399 /* NGAPITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGAPITests.swift; sourceTree = "<group>"; };
+		B76F33492A1B8A80000CA399 /* NGLib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGLib.swift; sourceTree = "<group>"; };
+		B76F334B2A1B8AEA000CA399 /* NGLibProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGLibProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 		B76F33202A1B7C60000CA399 = {
 			isa = PBXGroup;
 			children = (
+				B76F33482A1B8A6D000CA399 /* Shared */,
 				B76F332C2A1B7C60000CA399 /* NGAPI */,
 				B76F33382A1B7C61000CA399 /* NGAPITests */,
 				B76F332B2A1B7C60000CA399 /* Products */,
@@ -83,6 +88,15 @@
 				B76F33392A1B7C61000CA399 /* NGAPITests.swift */,
 			);
 			path = NGAPITests;
+			sourceTree = "<group>";
+		};
+		B76F33482A1B8A6D000CA399 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				B76F33492A1B8A80000CA399 /* NGLib.swift */,
+				B76F334B2A1B8AEA000CA399 /* NGLibProtocol.swift */,
+			);
+			path = Shared;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +208,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B76F334A2A1B8A80000CA399 /* NGLib.swift in Sources */,
+				B76F334C2A1B8AEA000CA399 /* NGLibProtocol.swift in Sources */,
 				B76F332F2A1B7C60000CA399 /* NGAPI.docc in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -325,7 +341,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -402,6 +418,7 @@
 		B76F33422A1B7C61000CA399 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5EN4C8MKE6;
@@ -418,6 +435,7 @@
 		B76F33432A1B7C61000CA399 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5EN4C8MKE6;
